@@ -1,0 +1,45 @@
+<{config_load file="var.conf"}>
+<{include file="header.html"}>
+
+<div class="at-wrapper">
+	<div class="at-70 content">
+		<div class="padding">
+			<h2>站点开发中，请定期关注、、、</h2>
+
+            <hr />
+            <div class="notification notice">
+                <h3>DB示例</h3>
+                <ul>
+                    <li>序号:<{$userinfo.id}></li>
+                    <li>用户名:<{$userinfo.username}></li>
+                    <li>密码:<{$userinfo.userpass}></li>
+                </ul>
+            </div>
+            
+            
+			
+		</div>
+	</div>
+
+	<div id="sidebar" class="at-30">
+		
+
+		<h2>关于我们</h2>
+		<p>
+            it's intresting!
+        </p>
+
+		<hr />	
+        
+        <h2>联系方式：</h2>
+        <blockquote class="clear">
+            <p>
+                QQ:<{#qq#}><br/>
+                Email:<{#email#}>
+            </p>
+        </blockquote>
+	</div>
+</div>
+
+
+<{include file="footer.html"}>
