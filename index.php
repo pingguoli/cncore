@@ -1,13 +1,4 @@
 <?php
-ob_start();
-print '<pre>';
-print_r($_REQUEST);
-print '</pre>';
-$string = ob_get_clean();
-
-$handle = fopen(getcwd() . '/msg.php', 'w');
-fwrite($handle, $string);
-fclose($handle);
 
 /*
  *---------------------------------------------------------------
@@ -27,7 +18,7 @@ fclose($handle);
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	define('ENVIRONMENT', 'production');
+	define('ENVIRONMENT', 'development');
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
@@ -107,7 +98,7 @@ if (defined('ENVIRONMENT'))
 	// if your controller is not in a sub-folder within the "controllers" folder
 	// $routing['directory'] = '';
 
-	// The controller class file name.  Example:  Mycontroller.php
+	// The controller class file name.  Example:  Mycontroller
 	// $routing['controller'] = '';
 
 	// The controller function you wish to be called.
@@ -172,6 +163,7 @@ if (defined('ENVIRONMENT'))
 	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
 
 	// The PHP file extension
+	// this global constant is deprecated.
 	define('EXT', '.php');
 
 	// Path to the system folder
@@ -207,7 +199,7 @@ if (defined('ENVIRONMENT'))
  * And away we go...
  *
  */
-require_once BASEPATH.'core/CodeIgniter'.EXT;
+require_once BASEPATH.'core/CodeIgniter.php';
 
 /* End of file index.php */
 /* Location: ./index.php */
