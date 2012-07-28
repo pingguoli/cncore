@@ -1,79 +1,59 @@
 <{config_load file="var.conf"}>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<title>CN·CORE-->我们一直在努力!</title>
+    <!-- Le styles -->
+    <link href="<{#template_dir#}>/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="<{#template_dir#}>/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="<{#template_dir#}>/css/style.css" rel="stylesheet">
 
-	<meta name="keywords" content="cncore" />
-	<meta name="description" content="新科锐项目展示、合作站点！" />
-	<meta name="author" content="chentao" />
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-    <link rel="icon" href="<{#template_dir#}>/image/atatonic-avatar.html" type="image/x-icon" />
-	<link rel="shortcut icon" href="<{#template_dir#}>/image/atatonic-avatar.html" type="image/x-icon" />
-	
-	<link href="<{#template_dir#}>/css/at-base.css" type="text/css" media="all" rel="stylesheet" />
-	<link href="<{#template_dir#}>/css/at-type.css" type="text/css" media="all" rel="stylesheet" />
-	<link href="<{#template_dir#}>/css/at-forms.css" type="text/css" media="all" rel="stylesheet" />
-	<link href="<{#template_dir#}>/css/at-print.css" type="text/css" media="print" rel="stylesheet" />
-    
-    <link href="<{#template_dir#}>/css/custom.css" type="text/css" media="all" rel="stylesheet" />
-	
-	<!--[if IE]>
-	<link href="<{#template_dir#}>/css/at-ie.css" type="text/css" media="screen" rel="stylesheet" />
-	<![endif]-->
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="<{#template_dir#}>/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<{#template_dir#}>/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<{#template_dir#}>/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<{#template_dir#}>/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="<{#template_dir#}>/ico/apple-touch-icon-57-precomposed.png">
+  </head>
 
-	<style type="text/css">
-		body {
-			background: #fff url(<{#template_dir#}>/images/gridbg.gif);
-		}
-		
-		#sidebar {
-			font-size: 11px;
-		}
-		
-		p.intro { 
-			font-style: bold;
-		} 
-		
-		.content .padding {
-			padding: 0 100px 0 0;
-		}
-		
-		.item .padding {
-			padding: 0 12px 0 0;
-		}
-		
-		.list-item h2 {
-			margin: 0;
-			line-height: 36px;
-		}
-		
-		blockquote p {
-			margin: 0;
-		}
+  <body>
 
-		fieldset {
-			padding: 0 9px 9px
-		}
-		
-		.at-wrapper {
-			margin: 18px auto 0;
-		}
-		
-	</style>
-
-</head>
-<body>
-    <div class="at-wrapper">
-        <div class="at-wrapper header">
-            <h1>CN·CORE</h1>
-            <br/>
-            我们一直在努力！
-            <hr class=""/>
-            <div class=" text_center "><a href="index.php">首页</a>|<a>项目</a>|<a>下载</a>|<a>加入我们</a>|<a>捐赠</a>|<a>近期更新</a></div>
-            <br/>
-            <hr class=""/>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+            <a class="brand" href="#">CN.CORE</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">首页</a></li>
+              <li><a href="#about">项目</a></li>
+              <li><a href="#joinus">加入我们</a></li>
+              <li><a href="#donate">捐赠</a></li>
+              <li><a href="#update">近期更新</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
+      </div>
     </div>
+      
+    <div class="container">
