@@ -31,19 +31,21 @@
 	 */
 	public function index()
 	{
-        //原加载VIEW模块示例
-		//$this->load->view('core');
-        
-        //数据库查询示例
-        $query = 'select * from debug_example;';
-        $result = $this->db->query($query);
-        foreach ($result->result_array() as $row)
-        {
-           $userinfo = $row;
-        }
-        $this->msmarty->assign('userinfo', $userinfo);
-        
-        $this->msmarty->display('core.html');
+            //原加载VIEW模块示例
+                    //$this->load->view('core');
+
+            //数据库查询示例
+            $query = 'select * from debug_example;';
+            $result = $this->db->query($query);
+            foreach ($result->result_array() as $row)
+            {
+               $userinfo = $row;
+            }
+            $this->msmarty->assign('userinfo', $userinfo);
+            
+            $this->msmarty->assign('base_url', base_url());
+
+            $this->msmarty->display('core.html');
 	}
 }
 
